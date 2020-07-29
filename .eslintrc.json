@@ -12,7 +12,7 @@
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly",
-        "__DEV__": "readonly"
+				"__DEV__": "readonly"
     },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -24,12 +24,12 @@
     },
     "plugins": [
         "react",
+		"react-hooks",
         "@typescript-eslint",
-        "react-hooks",
         "prettier"
     ],
     "rules": {
-      "react-hooks/rules-of-hooks": "error",
+			"react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "import/prefer-default-export": "off",
@@ -40,8 +40,7 @@
           "ts": "never",
           "tsx": "never"
         }
-      ],
-      "prettier/prettier": "error"
+      ]
     },
     "settings": {
       "import/resolver": {
