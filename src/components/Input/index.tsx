@@ -84,6 +84,7 @@ const Input: React.RefForwardingComponent<InputRef, InputProps> = (
         onChangeText={value => {
           inputValueRef.current.value = value;
         }}
+        /* eslint-disable react/jsx-props-no-spreading */
         {...rest}
       />
     </Container>
